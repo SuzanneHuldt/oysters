@@ -11,7 +11,7 @@ class Station
  end
 
 def fetch_zone(name)
-   Zones.const_get(name.upcase)
+   Zones.const_get(name.to_s.upcase)
 end
 
 
